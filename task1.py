@@ -6,7 +6,7 @@ import random
 from typing import List
 from collections import Counter
 
-# 将算法推广为找到 𝑝 次方的向下取整根
+# Extending the algorithm to find the downward integer root of the 𝑝-squared
 def floor_root(number: int, power: int = 2) -> int:
     """
     Compute the floor of the p-th root of a non-negative integer.
@@ -45,7 +45,7 @@ def floor_root(number: int, power: int = 2) -> int:
     return result
 
 
-# 使用二分查找算法来计算一个正整数的向下取整平方根
+# Compute the square root of a positive integer rounded down using the dichotomous lookup algorithm
 def floor_square_root(number: int) -> int:
     """
     Compute the floor of the square root of a non-negative integer.
