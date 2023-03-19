@@ -55,9 +55,6 @@ def unsafe_floor_sqrt(x):
     return int((x + 0.5)**(1/2))
 
 def check_floor_root(number: int, root: int, power: int = 2) -> bool:
-    """
-    Check whether r is the pth floor root of n, i.e., r^p <= n < (r+1)^p.
-    """
     if power == 1:
         return number == root
     elif power == 2:
@@ -68,9 +65,6 @@ def check_floor_root(number: int, root: int, power: int = 2) -> bool:
         return lower_bound <= number < upper_bound
 
 def random_number(digits: int) -> int:
-    """
-    Generate a random non-negative integer with exactly digits decimal digits.
-    """
     if digits <= 0:
         return 0
     else:
@@ -79,12 +73,6 @@ def random_number(digits: int) -> int:
         return random.randint(lower_bound, upper_bound)
 
 def unsafe_failure_rate(number_sizes: List[int], samples: int = 500) -> List[float]:
-    """
-    Determine an approximate failure rate for the unsafe_floor_sqrt() function
-    by generating random numbers with different numbers of digits and checking
-    whether the function produces correct results. The function returns a list
-    of failure rates for each tested number size.
-    """
     failure_rates = []
     for digits in number_sizes:
         failures = 0

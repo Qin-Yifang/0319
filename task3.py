@@ -19,9 +19,6 @@ def Kintegral(Ka, n):
 
 
 def counter(original_f):
-    '''
-    Decorator to count the number of times original_f is evaluated.
-    '''
     # Define our new, decorated function, with added features
     def decorated_f(x):
         # Increment the number of .evals (depending on whether x is a number or an array)
