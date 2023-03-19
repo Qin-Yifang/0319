@@ -31,6 +31,9 @@ def floor_root(number: int, power: int = 2) -> int:
 
 # 使用二分查找算法来计算一个正整数的向下取整平方根
 def floor_square_root(number: int) -> int:
+    """
+    111
+    """
     if number == 0 or number == 1:
         return number
 
